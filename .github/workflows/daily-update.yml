@@ -1,0 +1,37 @@
+name: Daily update
+
+on:
+  schedule:
+    # 02:23 UTC daily = 10:23 Beijing time
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Refresh star counts and releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_readme.py
+
+      - name: Commit if content changed
+        run: |
+          if git diff --quiet; then
+            echo "No content changes today."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md README.zh-CN.md data/releases.json
+          git commit -m "docs: daily refresh — stars & releases ($(date -u +%F))"
+          git push
