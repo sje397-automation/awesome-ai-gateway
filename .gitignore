@@ -6,3 +6,4 @@ __pycache__/
 .DS_Store
 .claude/
 LAUNCH_DRAFTS.md
+drafts/
