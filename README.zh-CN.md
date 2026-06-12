@@ -8,14 +8,23 @@
 [![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey.svg)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/cuihuan/awesome-ai-gateway)](https://github.com/cuihuan/awesome-ai-gateway/commits/main)
 
-> **AI 网关 / LLM 代理精选清单** — LiteLLM、OpenRouter、Portkey、Kong、Higress、new-api 等 50+ 项目，按真实诉求分类：**性价比、合规、自托管、智能路由、国内生态**。星数与版本发布由 CI 每日自动刷新。
+> **全网唯一给 50+ 网关_打分_、并附可复现成本评测的 AI 网关清单——不只是链接。** 按真实诉求分类，而非按厂商罗列。
+
+**50+ 网关评分** · **可复现的 106× 成本评测**（带单测） · **四维评分卡**——合规·价格·安全·稳定 · **中英双语** · **每日自动更新**
 
 **语言：** [English](README.md) · 简体中文
 
-**AI 网关**位于你的代码与大模型厂商之间：一个端点、一把 Key、打通所有模型。它负责路由、故障转移、缓存、限流、成本核算与安全护栏——你只需改一个 `base_url`，而不是为每家厂商重写应用。
+<p align="center">
+<a href="#我该用哪个网关"><kbd> &nbsp; 🧭 选网关 &nbsp; </kbd></a> &nbsp;
+<a href="BENCHMARKS.zh-CN.md"><kbd> &nbsp; 📊 成本与评分卡 &nbsp; </kbd></a> &nbsp;
+<a href="#快速上手一行接入"><kbd> &nbsp; ⚡ 一行接入 &nbsp; </kbd></a>
+</p>
 
-> ### 📊 新增：[**评测集 →**](BENCHMARKS.zh-CN.md)
-> 不只是链接清单——而是一层标注来源、可复现的评测：**模型基准**（AA 指数、GPQA、SWE-bench、Arena）、由[带单测的脚本](scripts/cost_calc.py)计算的**真实 Token 成本**（写一封 10 万 token 报告，**DeepSeek 花 $0.03，GPT-5.5 花 $3.01**——差 106 倍），以及一张评估合规·价格·安全·稳定的**网关评分卡**。[去看看 →](BENCHMARKS.zh-CN.md)
+<p align="center">
+  <a href="BENCHMARKS.zh-CN.md"><img src="assets/cost-spread.png" alt="写一份 10 万 token 报告的成本：DeepSeek $0.03 vs GPT-5.5 $3.01——106 倍价差，由带单测的脚本计算" width="780"></a>
+</p>
+
+> 同一个任务，取决于网关背后用哪个模型，成本能差 **100 倍**。**AI 网关**位于你的代码与大模型厂商之间——一个端点、一把 Key、打通所有模型——负责路由、故障转移、缓存、限流、成本核算与护栏，你只需改一个 `base_url`，而非为每家厂商重写应用。这份清单帮你选对网关，[评测集](BENCHMARKS.zh-CN.md)再告诉你该路由到哪个模型。
 
 ## 目录
 

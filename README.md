@@ -8,14 +8,23 @@
 [![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey.svg)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/cuihuan/awesome-ai-gateway)](https://github.com/cuihuan/awesome-ai-gateway/commits/main)
 
-> A curated list of **AI gateways & LLM proxies** — LiteLLM, OpenRouter, Portkey, Kong, Higress, new-api and 50+ more — organized by what you actually need: **lowest cost, compliance, self-hosting, smart routing, or China-ecosystem support**. Star counts and releases refresh daily via CI.
+> **The only AI-gateway list that _scores_ 50+ gateways and ships a reproducible cost benchmark — not just links.** Organized by what you actually need, not by vendor.
+
+**50+ gateways scored** · **reproducible 106× cost benchmark** (unit-tested) · **4-axis scorecard** — compliance · price · security · stability · **bilingual EN/中文** · **auto-updated daily**
 
 **Languages:** English · [简体中文](README.zh-CN.md)
 
-An **AI gateway** sits between your code and LLM providers: one endpoint, one key, many models. It handles routing, failover, caching, rate limits, cost tracking and guardrails — so you change a `base_url` instead of rewriting your app for every provider.
+<p align="center">
+<a href="#which-gateway-should-i-use"><kbd> &nbsp; 🧭 Pick a gateway &nbsp; </kbd></a> &nbsp;
+<a href="BENCHMARKS.md"><kbd> &nbsp; 📊 Cost & scorecard &nbsp; </kbd></a> &nbsp;
+<a href="#quick-start-drop-in"><kbd> &nbsp; ⚡ Drop-in snippet &nbsp; </kbd></a>
+</p>
 
-> ### 📊 New: [**Evaluation Set →**](BENCHMARKS.md)
-> Not just a link list — a sourced, reproducible evaluation layer: **model benchmarks** (AA Index, GPQA, SWE-bench, Arena), **real-world token cost** computed by a [unit-tested script](scripts/cost_calc.py) (writing a 100K-token report costs **$0.03 on DeepSeek vs $3.01 on GPT-5.5** — a 106× spread), and a **gateway scorecard** rating compliance · price · security · stability. [Read it →](BENCHMARKS.md)
+<p align="center">
+  <a href="BENCHMARKS.md"><img src="assets/cost-spread.png" alt="Cost to write one 100K-token report: $0.03 on DeepSeek vs $3.01 on GPT-5.5 — a 106x spread, computed by a unit-tested script" width="780"></a>
+</p>
+
+> The same task can cost **100× more** depending on the model behind your gateway. An **AI gateway** sits between your code and LLM providers — one endpoint, one key, many models — handling routing, failover, caching, rate limits, cost tracking and guardrails so you change a `base_url` instead of rewriting your app. This list helps you pick the right one, then the [evaluation set](BENCHMARKS.md) shows you which model to route to.
 
 ## Contents
 
