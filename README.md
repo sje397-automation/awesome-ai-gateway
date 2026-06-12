@@ -83,7 +83,17 @@ resp = client.chat.completions.create(
 )
 ```
 
-Base URLs for the rest are on each project's docs (linked below). Most are OpenAI-compatible, so the only change is these two lines.
+**OpenAI-compatible `base_url` cheat sheet** (verified June 2026 — swap in, keep your code):
+
+| Gateway | `base_url` |
+|---|---|
+| OpenRouter | `https://openrouter.ai/api/v1` |
+| Vercel AI Gateway | `https://ai-gateway.vercel.sh/v1` |
+| Cloudflare AI Gateway | `https://gateway.ai.cloudflare.com/v1/{account}/{gateway}/compat` |
+| Portkey | `https://api.portkey.ai/v1` |
+| Helicone AI Gateway | `https://ai-gateway.helicone.ai/ai` |
+| Requesty | `https://router.requesty.ai/v1` |
+| LiteLLM (self-hosted) | `http://localhost:4000` |
 
 ## Quick comparison
 

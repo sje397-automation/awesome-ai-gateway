@@ -83,7 +83,17 @@ resp = client.chat.completions.create(
 )
 ```
 
-其余网关的 base_url 见各项目文档（下方有链接）。大多兼容 OpenAI 格式，所以改动就这两行。
+**OpenAI 兼容 `base_url` 速查表**（2026 年 6 月核实——换上即用，代码照旧）：
+
+| 网关 | `base_url` |
+|---|---|
+| OpenRouter | `https://openrouter.ai/api/v1` |
+| Vercel AI Gateway | `https://ai-gateway.vercel.sh/v1` |
+| Cloudflare AI Gateway | `https://gateway.ai.cloudflare.com/v1/{account}/{gateway}/compat` |
+| Portkey | `https://api.portkey.ai/v1` |
+| Helicone AI Gateway | `https://ai-gateway.helicone.ai/ai` |
+| Requesty | `https://router.requesty.ai/v1` |
+| LiteLLM（自托管） | `http://localhost:4000` |
 
 ## 快速对比
 
