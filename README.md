@@ -332,6 +332,14 @@ For zero ops: [Vercel AI Gateway](https://vercel.com/ai-gateway) or [Cloudflare 
 **Are AI gateways safe? Who sees my prompts?**
 Every gateway sees your prompts. For sensitive data self-host or require zero-data-retention in writing; check the [gateway scorecard](BENCHMARKS.md#part-4--gateway-scorecard-compliance--price--security--stability) for compliance/security ratings and known CVEs.
 
+## Guides & comparisons
+
+In-depth, data-backed comparisons for the questions people actually search:
+
+- [**LiteLLM vs OpenRouter vs Portkey (2026)**](compare/litellm-vs-openrouter-vs-portkey-2026.md) — which AI gateway should you use?
+
+*More comparisons coming. Suggest one via an [issue](https://github.com/cuihuan/awesome-ai-gateway/issues).*
+
 ## Contributing
 
 Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first. Inclusion criteria, in short: the project must be an actual gateway/proxy/router for LLM or agent traffic (not an SDK wrapper or chat UI), publicly available, and active within the last 12 months — or clearly labeled as stale.
