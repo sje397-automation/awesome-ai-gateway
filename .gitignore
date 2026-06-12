@@ -4,4 +4,5 @@ LAUNCH_PLAYBOOK.md
 __pycache__/
 *.pyc
 .DS_Store
+.claude/
 LAUNCH_DRAFTS.md
