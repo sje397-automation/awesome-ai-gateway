@@ -1,0 +1,31 @@
+name: "🐛 Report a stale or wrong entry"
+description: A project is unmaintained, a link is broken, or a fact/score is wrong.
+title: "[Fix] <project name>"
+labels: ["correction"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry?
+      placeholder: e.g. RouteLLM, or a row in the evaluation set
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What's wrong?
+      options:
+        - Project is unmaintained / archived
+        - Broken or redirected link
+        - Wrong benchmark / price / score
+        - Wrong category or description
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link to the last release date, archived repo, current pricing page, correct number, etc. We'd rather know.
+    validations:
+      required: true

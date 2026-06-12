@@ -1,0 +1,56 @@
+name: "➕ Suggest an AI gateway"
+description: Recommend a gateway, proxy, or router to add to the list.
+title: "[Add] <project name>"
+labels: ["suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      placeholder: e.g. LiteLLM
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Repo or homepage URL
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Which section does it fit best?
+      options:
+        - 💰 Cost-first
+        - 🔓 Self-hosted open source
+        - 🏢 Enterprise & compliance
+        - ☁️ First-party gateways
+        - 🇨🇳 China ecosystem
+        - 🧠 Smart routing & model selection
+        - 📊 Observability & cost tracking
+        - 🤖 MCP & agent gateways
+        - ☸️ Kubernetes-native & inference infra
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: What it does + one differentiator. Neutral and factual, no marketing superlatives.
+    validations:
+      required: true
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Inclusion criteria (see CONTRIBUTING.md)
+      options:
+        - label: It's an actual gateway/proxy/router for LLM or agent traffic (not an SDK wrapper or chat UI)
+          required: true
+        - label: It's publicly available
+          required: true
+        - label: It's active within the last 12 months (or I've noted it's stale)
+          required: true
+        - label: It does NOT rely on reverse-engineered private APIs or resold stolen quota
+          required: true

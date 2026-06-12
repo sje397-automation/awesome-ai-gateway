@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📊 Evaluation set (benchmarks, cost, scorecard)
+    url: https://github.com/cuihuan/awesome-ai-gateway/blob/main/BENCHMARKS.md
+    about: Model benchmarks, computed token cost, and the gateway scorecard.
+  - name: 📖 Contributing guide
+    url: https://github.com/cuihuan/awesome-ai-gateway/blob/main/CONTRIBUTING.md
+    about: Inclusion criteria and entry format before you open a PR.
