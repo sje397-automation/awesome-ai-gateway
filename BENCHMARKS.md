@@ -123,6 +123,12 @@ Benchmarks rank capability in the abstract; most teams have one concrete job. Th
 
 ### 3.3 Coding-agent session (mixed + reasoning tokens)
 
+<p align="center">
+  <img src="assets/coding-value.png" alt="Coding capability vs. cost: SWE-bench Verified against the cost of one coding-agent session. Open-weight DeepSeek V4 Pro and Kimi K2.6 reach ~80% — level with Gemini 3.1 Pro — at a fraction of the cost; the 95% ceiling (Claude Fable 5) costs ~46x the cheapest model that still clears 80%." width="820">
+</p>
+
+> **Capability *and* cost on one axis.** Every model with both a published SWE-bench Verified score and a price, plotted on the shared coding-agent session. Open weights (green) hit ~80% — flagship-*tier* coding — for a fraction of the spend: **DeepSeek V4 Pro ties Gemini 3.1 Pro (80.6%) at ~11× less**, and the 95% ceiling (Fable 5) costs ~46× the cheapest model that still clears 80%. The cost axis reuses the unit-tested engine below; capability is the dated `swe_bench_verified` figure. Rendered by [`scripts/make_coding_chart.py`](scripts/make_coding_chart.py) — re-run it and you get the same picture.
+
 <!-- COST:coding:START -->
 **Coding-agent session** (input 50,000 tok · output 20,000 tok · +30,000 thinking for reasoning models)
 

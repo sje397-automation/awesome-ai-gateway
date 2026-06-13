@@ -123,6 +123,12 @@
 
 ### 3.3 编码 Agent 会话（混合 + 推理 token）
 
+<p align="center">
+  <img src="assets/coding-value.png" alt="编码能力 vs. 成本：SWE-bench Verified 对单次编码 Agent 会话成本。开源的 DeepSeek V4 Pro 与 Kimi K2.6 拿到约 80%——与 Gemini 3.1 Pro 持平——成本却只是零头；95% 的天花板（Claude Fable 5）比最便宜的 80% 档模型贵约 46 倍。" width="820">
+</p>
+
+> **能力与成本放在同一张图上。** 图中是所有"同时有公开 SWE-bench Verified 分数和价格"的模型，统一按编码 Agent 会话计价。开源模型（绿色）拿到约 80%——旗舰**级**编码能力——花费却只是零头：**DeepSeek V4 Pro 以约 1/11 成本打平 Gemini 3.1 Pro（80.6%）**，而 95% 的天花板（Fable 5）比最便宜的 80% 档模型贵约 46×。成本轴复用下方带单测的引擎计算，能力轴取自带日期的 `swe_bench_verified`。由 [`scripts/make_coding_chart.py`](scripts/make_coding_chart.py) 渲染——重跑一次得到同一张图。
+
 <!-- COST:coding:START -->
 **编码 Agent 会话** (输入 50,000 tok · 输出 20,000 tok · 推理模型另计 30,000 思考 token)
 
