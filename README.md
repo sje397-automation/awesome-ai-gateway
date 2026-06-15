@@ -1,56 +1,34 @@
 # Awesome AI Gateway [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 [![GitHub stars](https://img.shields.io/github/stars/cuihuan/awesome-ai-gateway?style=social)](https://github.com/cuihuan/awesome-ai-gateway/stargazers)
-[![Gateways](https://img.shields.io/badge/gateways-50%2B-blue)](#quick-comparison)
-[![Data updated daily](https://img.shields.io/badge/data-updated%20daily-success?logo=githubactions&logoColor=white)](.github/workflows/daily-update.yml)
 [![Evaluation set](https://img.shields.io/badge/📊-evaluation%20set-orange)](BENCHMARKS.md)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey.svg)](LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/cuihuan/awesome-ai-gateway)](https://github.com/cuihuan/awesome-ai-gateway/commits/main)
+[![Data updated daily](https://img.shields.io/badge/data-updated%20daily-success?logo=githubactions&logoColor=white)](.github/workflows/daily-update.yml)
 
-> **The only AI-gateway list that _scores_ 50+ gateways and ships a reproducible cost benchmark — not just links.** Organized by what you actually need, not by vendor.
-
-**50+ gateways scored** · **reproducible 106× cost benchmark** (unit-tested) · **4-axis scorecard** — compliance · price · security · stability · **bilingual EN/中文** · **auto-updated daily**
+> **Pick the right AI gateway for your need in ~10 seconds — then trust the answer.** A decision tree, a drop-in snippet, a reproducible cost benchmark, and independent evidence for what we exclude. Organized by what you actually need, not by vendor.
 
 **Languages:** English · [简体中文](README.zh-CN.md)
 
 <p align="center">
-<a href="https://cuihuan.github.io/awesome-ai-gateway/"><kbd> &nbsp; 🚀 Live interactive site &nbsp; </kbd></a> &nbsp;
 <a href="#which-gateway-should-i-use"><kbd> &nbsp; 🧭 Pick a gateway &nbsp; </kbd></a> &nbsp;
+<a href="https://cuihuan.github.io/awesome-ai-gateway/"><kbd> &nbsp; 🚀 Live interactive site &nbsp; </kbd></a> &nbsp;
 <a href="BENCHMARKS.md"><kbd> &nbsp; 📊 Cost & scorecard &nbsp; </kbd></a> &nbsp;
 <a href="#quick-start-drop-in"><kbd> &nbsp; ⚡ Drop-in snippet &nbsp; </kbd></a>
 </p>
 
-<p align="center">
-  <a href="BENCHMARKS.md"><img src="assets/cost-spread.png" alt="Cost to write one 100K-token report: $0.03 on DeepSeek vs $3.01 on GPT-5.5 — a 106x spread, computed by a unit-tested script" width="780"></a>
-</p>
+<details>
+<summary>📑 <b>Full contents</b> — pick fast · browse by need · reference</summary>
 
-> The same task can cost **100× more** depending on the model behind your gateway. An **AI gateway** sits between your code and LLM providers — one endpoint, one key, many models — handling routing, failover, caching, rate limits, cost tracking and guardrails so you change a `base_url` instead of rewriting your app. This list helps you pick the right one, then the [evaluation set](BENCHMARKS.md) shows you which model to route to.
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey.svg)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/cuihuan/awesome-ai-gateway)](https://github.com/cuihuan/awesome-ai-gateway/commits/main)
 
-⭐ **Found this useful? [Star it](https://github.com/cuihuan/awesome-ai-gateway)** — that's how the next engineer choosing a gateway finds it. CC0, no signup, no tracking, no vendor money.
+**Pick fast** · [Which gateway should I use?](#which-gateway-should-i-use) · [Quick start (drop-in)](#quick-start-drop-in) · [Quick comparison](#quick-comparison)
 
-## Contents
+**Browse by need** · [💰 Cost-first](#-cost-first-cheapest-multi-model-access) · [🔓 Self-hosted](#-self-hosted-open-source) · [🏢 Enterprise & compliance](#-enterprise--compliance) · [☁️ First-party clouds](#️-first-party-gateways-cloud--model-vendors) · [🇨🇳 China ecosystem](#-china-ecosystem) · [🤖 MCP & agent gateways](#-mcp--agent-gateways)
 
-- [📊 Evaluation set: model benchmarks · token cost · gateway scorecard](BENCHMARKS.md)
-- [Which gateway should I use? (decision tree)](#which-gateway-should-i-use)
-- [Quick start (drop-in)](#quick-start-drop-in)
-- [Quick comparison](#quick-comparison)
-- [💰 Cost-first: cheapest multi-model access](#-cost-first-cheapest-multi-model-access)
-- [🔓 Self-hosted open source](#-self-hosted-open-source)
-- [🏢 Enterprise & compliance](#-enterprise--compliance)
-- [☁️ First-party gateways (cloud & model vendors)](#️-first-party-gateways-cloud--model-vendors)
-- [🇨🇳 China ecosystem](#-china-ecosystem)
-- [🧠 Smart routing & model selection](#-smart-routing--model-selection)
-- [📊 Observability & cost tracking](#-observability--cost-tracking)
-- [🤖 MCP & agent gateways](#-mcp--agent-gateways)
-- [☸️ Kubernetes-native & inference infra](#️-kubernetes-native--inference-infra)
-- [📰 What's new](#-whats-new)
-- [🚀 Recent releases (auto-updated)](#-recent-releases-auto-updated)
-- [Glossary](#glossary)
-- [How to choose safely](#how-to-choose-safely)
-- [FAQ](#faq)
-- [📚 Essential reading](#-essential-reading)
-- [Contributing](#contributing)
+**Reference** · [📊 Evaluation set](BENCHMARKS.md) · [How to choose safely](#how-to-choose-safely) · [FAQ](#faq) · [📚 Essential reading](#-essential-reading) · [📰 What's new](#-whats-new) · [Glossary](#glossary) · [Contributing](#contributing)
+
+</details>
 
 ## Which gateway should I use?
 
@@ -58,7 +36,21 @@
   <img src="assets/decision-tree.png" alt="Decision tree: which AI gateway should you use? Hosted (OpenRouter, Vercel, Cloudflare, Bedrock, Azure, Vertex, Portkey) vs self-hosted open source (LiteLLM, Bifrost, new-api, one-api, GPT-Load, Kong, Higress, APISIX, Envoy AI Gateway, agentgateway), chosen by what you need." width="840">
 </p>
 
-> _At a glance — the complete decision tree (more branches) is right below._
+**⚡ Fast answer** — one sane default per need (alternatives in each linked section):
+
+| I need… | Start with | Drill into |
+|---|---|---|
+| Cheapest access to many models, zero ops | **OpenRouter** | [Cost-first](#-cost-first-cheapest-multi-model-access) |
+| Zero markup on my own keys | **Vercel** / **Cloudflare** | [Cost-first](#-cost-first-cheapest-multi-model-access) |
+| Self-host, broadest features | **LiteLLM** | [Self-hosted](#-self-hosted-open-source) |
+| Self-host, lowest overhead | **Bifrost** (Go) | [Self-hosted](#-self-hosted-open-source) |
+| China models + team key billing | **new-api** | [China ecosystem](#-china-ecosystem) |
+| Enterprise K8s + audit | **Kong** / **Higress** | [Enterprise](#-enterprise--compliance) |
+| Strongest compliance (HIPAA/FedRAMP) | **Azure** / **Bedrock** | [First-party](#️-first-party-gateways-cloud--model-vendors) |
+| Govern agents / MCP traffic | **agentgateway** | [MCP & agents](#-mcp--agent-gateways) |
+
+<details>
+<summary>📋 The full decision tree — every branch, copy-pasteable</summary>
 
 ```text
 Do you want to self-host?
@@ -78,23 +70,22 @@ Do you want to self-host?
     └─ Governing AI agents & MCP traffic ───────▶ agentgateway · Lunar.dev
 ```
 
-**⚡ Fast answer** — one sane default per need (alternatives in each linked section):
-
-| I need… | Start with | Drill into |
-|---|---|---|
-| Cheapest access to many models, zero ops | **OpenRouter** | [Cost-first](#-cost-first-cheapest-multi-model-access) |
-| Zero markup on my own keys | **Vercel** / **Cloudflare** | [Cost-first](#-cost-first-cheapest-multi-model-access) |
-| Self-host, broadest features | **LiteLLM** | [Self-hosted](#-self-hosted-open-source) |
-| Self-host, lowest overhead | **Bifrost** (Go) | [Self-hosted](#-self-hosted-open-source) |
-| China models + team key billing | **new-api** | [China ecosystem](#-china-ecosystem) |
-| Enterprise K8s + audit | **Kong** / **Higress** | [Enterprise](#-enterprise--compliance) |
-| Strongest compliance (HIPAA/FedRAMP) | **Azure** / **Bedrock** | [First-party](#️-first-party-gateways-cloud--model-vendors) |
-| Govern agents / MCP traffic | **agentgateway** | [MCP & agents](#-mcp--agent-gateways) |
+</details>
 
 ### ✅ Why trust this list
 - **Independent — no vendor money, no affiliate links, CC0.** Unlike affiliate-driven relay "rankings," nobody pays to appear here.
 - **Reproducible, not asserted.** Every cost cell is computed from [open pricing data](data/models.json) by a [unit-tested script](scripts/cost_calc.py); stars refresh daily via CI.
 - **Honest about risk.** We disclose CVEs, label archived/stale projects, and [exclude gray-market relays](#how-to-choose-safely) — with the research to back it.
+
+---
+
+> **Why this matters:** the same task can cost **100× more** depending on the model behind your gateway. An **AI gateway** sits between your code and LLM providers — one endpoint, one key, many models — handling routing, failover, caching, rate limits, cost tracking and guardrails, so you change a `base_url` instead of rewriting your app. Pick the gateway here, then the [evaluation set](BENCHMARKS.md) shows which model to route to.
+
+<p align="center">
+  <a href="BENCHMARKS.md"><img src="assets/cost-spread.png" alt="Cost to write one 100K-token report: $0.03 on DeepSeek vs $3.01 on GPT-5.5 — a 106x spread, computed by a unit-tested script" width="760"></a>
+</p>
+
+⭐ **Found this useful? [Star it](https://github.com/cuihuan/awesome-ai-gateway)** — that's how the next engineer choosing a gateway finds it. CC0, no signup, no tracking, no vendor money.
 
 ## Quick start (drop-in)
 

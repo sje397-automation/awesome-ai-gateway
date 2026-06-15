@@ -1,56 +1,34 @@
 # Awesome AI Gateway [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 [![GitHub stars](https://img.shields.io/github/stars/cuihuan/awesome-ai-gateway?style=social)](https://github.com/cuihuan/awesome-ai-gateway/stargazers)
-[![Gateways](https://img.shields.io/badge/网关-50%2B-blue)](#快速对比)
-[![Data updated daily](https://img.shields.io/badge/数据-每日更新-success?logo=githubactions&logoColor=white)](.github/workflows/daily-update.yml)
 [![Evaluation set](https://img.shields.io/badge/📊-评测集-orange)](BENCHMARKS.zh-CN.md)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey.svg)](LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/cuihuan/awesome-ai-gateway)](https://github.com/cuihuan/awesome-ai-gateway/commits/main)
+[![Data updated daily](https://img.shields.io/badge/数据-每日更新-success?logo=githubactions&logoColor=white)](.github/workflows/daily-update.yml)
 
-> **全网唯一给 50+ 网关_打分_、并附可复现成本评测的 AI 网关清单——不只是链接。** 按真实诉求分类，而非按厂商罗列。
-
-**50+ 网关评分** · **可复现的 106× 成本评测**（带单测） · **四维评分卡**——合规·价格·安全·稳定 · **中英双语** · **每日自动更新**
+> **按你的诉求，约 10 秒选对 AI 网关——而且这个答案可信。** 一棵决策树、一行接入、可复现的成本评测，外加我们排除灰产的独立证据。按真实诉求分类，而非按厂商罗列。
 
 **语言：** [English](README.md) · 简体中文
 
 <p align="center">
-<a href="https://cuihuan.github.io/awesome-ai-gateway/"><kbd> &nbsp; 🚀 在线交互页 &nbsp; </kbd></a> &nbsp;
 <a href="#我该用哪个网关"><kbd> &nbsp; 🧭 选网关 &nbsp; </kbd></a> &nbsp;
+<a href="https://cuihuan.github.io/awesome-ai-gateway/"><kbd> &nbsp; 🚀 在线交互页 &nbsp; </kbd></a> &nbsp;
 <a href="BENCHMARKS.zh-CN.md"><kbd> &nbsp; 📊 成本与评分卡 &nbsp; </kbd></a> &nbsp;
 <a href="#快速上手一行接入"><kbd> &nbsp; ⚡ 一行接入 &nbsp; </kbd></a>
 </p>
 
-<p align="center">
-  <a href="BENCHMARKS.zh-CN.md"><img src="assets/cost-spread.png" alt="写一份 10 万 token 报告的成本：DeepSeek $0.03 vs GPT-5.5 $3.01——106 倍价差，由带单测的脚本计算" width="780"></a>
-</p>
+<details>
+<summary>📑 <b>完整目录</b> —— 快速选 · 按需浏览 · 参考</summary>
 
-> 同一个任务，取决于网关背后用哪个模型，成本能差 **100 倍**。**AI 网关**位于你的代码与大模型厂商之间——一个端点、一把 Key、打通所有模型——负责路由、故障转移、缓存、限流、成本核算与护栏，你只需改一个 `base_url`，而非为每家厂商重写应用。这份清单帮你选对网关，[评测集](BENCHMARKS.zh-CN.md)再告诉你该路由到哪个模型。
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey.svg)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/cuihuan/awesome-ai-gateway)](https://github.com/cuihuan/awesome-ai-gateway/commits/main)
 
-⭐ **觉得有用就点个 [Star](https://github.com/cuihuan/awesome-ai-gateway)** —— 下一个在选网关的工程师就是这样找到它的。CC0 授权，无需注册、无追踪、不收厂商一分钱。
+**快速选** · [我该用哪个网关？](#我该用哪个网关) · [快速上手（一行接入）](#快速上手一行接入) · [快速对比](#快速对比)
 
-## 目录
+**按需浏览** · [💰 性价比优先](#-性价比优先) · [🔓 自托管开源](#-自托管开源) · [🏢 企业合规](#-企业合规) · [☁️ 原厂直连](#️-原厂直连云厂商模型厂商) · [🇨🇳 国内生态](#-国内生态) · [🤖 MCP 与 Agent 网关](#-mcp-与-agent-网关)
 
-- [📊 评测集：模型基准 · Token 成本 · 网关评分卡](BENCHMARKS.zh-CN.md)
-- [我该用哪个网关？（决策树）](#我该用哪个网关)
-- [快速上手（一行接入）](#快速上手一行接入)
-- [快速对比](#快速对比)
-- [💰 性价比优先](#-性价比优先)
-- [🔓 自托管开源](#-自托管开源)
-- [🏢 企业合规](#-企业合规)
-- [☁️ 原厂直连（云厂商/模型厂商）](#️-原厂直连云厂商模型厂商)
-- [🇨🇳 国内生态](#-国内生态)
-- [🧠 智能路由与模型选择](#-智能路由与模型选择)
-- [📊 可观测与成本核算](#-可观测与成本核算)
-- [🤖 MCP 与 Agent 网关](#-mcp-与-agent-网关)
-- [☸️ Kubernetes 原生与推理基础设施](#️-kubernetes-原生与推理基础设施)
-- [📰 行业动态](#-行业动态)
-- [🚀 最新版本发布（自动更新）](#-最新版本发布自动更新)
-- [术语表](#术语表)
-- [如何安全选型](#如何安全选型)
-- [常见问题 FAQ](#常见问题-faq)
-- [📚 必读精选](#-必读精选)
-- [参与贡献](#参与贡献)
+**参考** · [📊 评测集](BENCHMARKS.zh-CN.md) · [如何安全选型](#如何安全选型) · [常见问题 FAQ](#常见问题-faq) · [📚 必读精选](#-必读精选) · [📰 行业动态](#-行业动态) · [术语表](#术语表) · [参与贡献](#参与贡献)
+
+</details>
 
 ## 我该用哪个网关？
 
@@ -58,7 +36,21 @@
   <img src="assets/decision-tree.zh-CN.png" alt="决策树：我该用哪个 AI 网关？托管（OpenRouter、Vercel、Cloudflare、Bedrock、Azure、Vertex、Portkey）vs 自托管开源（LiteLLM、Bifrost、new-api、one-api、GPT-Load、Kong、Higress、APISIX、Envoy AI Gateway、agentgateway），按你的需求来选。" width="840">
 </p>
 
-> _速览版 —— 完整决策树（分支更全）就在下面。_
+**⚡ 快速答案** —— 每个需求一个稳妥默认项（备选见各分区链接）：
+
+| 我要… | 首选 | 细读 |
+|---|---|---|
+| 最低成本接入多模型、零运维 | **OpenRouter** | [性价比优先](#-性价比优先) |
+| 用自己的 Key、0 加价 | **Vercel** / **Cloudflare** | [性价比优先](#-性价比优先) |
+| 自托管、功能最全 | **LiteLLM** | [自托管开源](#-自托管开源) |
+| 自托管、开销最低 | **Bifrost**（Go） | [自托管开源](#-自托管开源) |
+| 国产模型 + 团队 Key 计费 | **new-api** | [国内生态](#-国内生态) |
+| 企业 K8s + 审计 | **Kong** / **Higress** | [企业合规](#-企业合规) |
+| 最强合规（HIPAA/FedRAMP） | **Azure** / **Bedrock** | [原厂直连](#️-原厂直连云厂商模型厂商) |
+| 治理 Agent / MCP 流量 | **agentgateway** | [MCP 与 Agent](#-mcp-与-agent-网关) |
+
+<details>
+<summary>📋 完整决策树 —— 每条分支、可复制</summary>
 
 ```text
 要不要自己部署？
@@ -78,23 +70,22 @@
     └─ 治理 Agent / MCP 流量 ───────▶ agentgateway · Lunar.dev
 ```
 
-**⚡ 快速答案** —— 每个需求一个稳妥默认项（备选见各分区链接）：
-
-| 我要… | 首选 | 细读 |
-|---|---|---|
-| 最低成本接入多模型、零运维 | **OpenRouter** | [性价比优先](#-性价比优先) |
-| 用自己的 Key、0 加价 | **Vercel** / **Cloudflare** | [性价比优先](#-性价比优先) |
-| 自托管、功能最全 | **LiteLLM** | [自托管开源](#-自托管开源) |
-| 自托管、开销最低 | **Bifrost**（Go） | [自托管开源](#-自托管开源) |
-| 国产模型 + 团队 Key 计费 | **new-api** | [国内生态](#-国内生态) |
-| 企业 K8s + 审计 | **Kong** / **Higress** | [企业合规](#-企业合规) |
-| 最强合规（HIPAA/FedRAMP） | **Azure** / **Bedrock** | [原厂直连](#️-原厂直连云厂商模型厂商) |
-| 治理 Agent / MCP 流量 | **agentgateway** | [MCP 与 Agent](#-mcp-与-agent-网关) |
+</details>
 
 ### ✅ 为什么可信
 - **独立——不收厂商钱、无返利链接、CC0。** 不像那些靠返利的中转"榜单"，这里没人花钱就能上榜。
 - **可复现，而非口说。** 每个成本数字都由[带单测的脚本](scripts/cost_calc.py)从[公开定价数据](data/models.json)算出；星数由 CI 每日刷新。
 - **对风险诚实。** 我们披露 CVE、标注已归档/停更项目、并[排除灰产中转](#如何安全选型)——且有研究佐证。
+
+---
+
+> **为什么重要：** 同一个任务，取决于网关背后用哪个模型，成本能差 **100 倍**。**AI 网关**位于你的代码与大模型厂商之间——一个端点、一把 Key、打通所有模型——负责路由、故障转移、缓存、限流、成本核算与护栏，你只需改一个 `base_url`，而非为每家厂商重写应用。先在这里选对网关，[评测集](BENCHMARKS.zh-CN.md)再告诉你该路由到哪个模型。
+
+<p align="center">
+  <a href="BENCHMARKS.zh-CN.md"><img src="assets/cost-spread.png" alt="写一份 10 万 token 报告的成本：DeepSeek $0.03 vs GPT-5.5 $3.01——106 倍价差，由带单测的脚本计算" width="760"></a>
+</p>
+
+⭐ **觉得有用就点个 [Star](https://github.com/cuihuan/awesome-ai-gateway)** —— 下一个在选网关的工程师就是这样找到它的。CC0 授权，无需注册、无追踪、不收厂商一分钱。
 
 ## 快速上手（一行接入）
 
