@@ -87,7 +87,7 @@ _TREE_EN = {
             "kind": "self",
             "leaves": [
                 {"cond": "Python stack, most features", "picks": ["LiteLLM"], "tag": None},
-                {"cond": "Max performance (Go / Rust)", "picks": ["Bifrost", "TensorZero"], "tag": None},
+                {"cond": "Max performance (Go)", "picks": ["Bifrost"], "tag": None},
                 {"cond": "China models + key distribution", "picks": ["new-api", "one-api", "GPT-Load"], "tag": None},
                 {"cond": "Enterprise K8s + audit", "picks": ["Kong", "Higress", "APISIX"], "tag": None},
                 {"cond": "Govern agent / MCP traffic", "picks": ["Envoy AI Gateway", "agentgateway"], "tag": None},
@@ -114,7 +114,7 @@ _TREE_ZH = {
             "kind": "self",
             "leaves": [
                 {"cond": "Python 栈、功能最全", "picks": ["LiteLLM"], "tag": None},
-                {"cond": "追求性能（Go / Rust）", "picks": ["Bifrost", "TensorZero"], "tag": None},
+                {"cond": "追求性能（Go）", "picks": ["Bifrost"], "tag": None},
                 {"cond": "国产模型、Key 分发计费", "picks": ["new-api", "one-api", "GPT-Load"], "tag": None},
                 {"cond": "企业 K8s、审计合规", "picks": ["Kong", "Higress", "APISIX"], "tag": None},
                 {"cond": "治理 Agent / MCP 流量", "picks": ["Envoy AI Gateway", "agentgateway"], "tag": None},
