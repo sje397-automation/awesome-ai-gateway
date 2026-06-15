@@ -1,0 +1,56 @@
+name: "⚠️ Report a sketchy relay / gateway"
+description: Caught a relay swapping models, leaking data, overcharging, or going dark? Report it — with evidence — so others get warned.
+title: "[Watch] <relay/gateway name>"
+labels: ["watch-list", "needs-evidence"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This list names risky relays **only with verifiable evidence** — not rumors.
+        Your report needs at least one concrete proof (a canary-diff result, an
+        incident link, a billing screenshot). Reports without evidence are closed.
+        See the [gray-relay note](https://github.com/cuihuan/awesome-ai-gateway#-china-ecosystem) for the verification method.
+  - type: input
+    id: name
+    attributes:
+      label: Relay / gateway name + URL
+      placeholder: e.g. cheap-gpt-relay.example / https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What's the problem?
+      options:
+        - Silent model swap / downgrade (you paid for X, got a cheaper/quantized model)
+        - Data exfiltration / prompt harvesting / MITM
+        - Stolen or resold quota (ToS-violating "free-api")
+        - Overcharging / dishonest token or cache billing
+        - Went dark / vanished with prepaid balance
+        - Other (explain below)
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (required)
+      description: |
+        At least one of: a canary-diff output (same prompt → relay vs. official, showing the difference),
+        a fingerprint/tokenizer probe result, a link to a documented incident or thread, or a redacted
+        billing/usage screenshot. Redact your keys.
+      placeholder: |
+        Canary prompt: "<known-hard reasoning question>"
+        Official (api.openai.com): <output / fingerprint>
+        Relay: <different output / wrong fingerprint>
+        + screenshot / thread link
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm
+      options:
+        - label: This is based on evidence I can share, not hearsay or a competitor grudge.
+          required: true
+        - label: I understand entries without verifiable evidence will be closed.
+          required: true
