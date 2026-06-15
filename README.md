@@ -311,14 +311,16 @@ Stars auto-refresh daily. ✅ built-in · ➕ via plugin/paid tier · ❌ not av
 
 ## 📰 What's new
 
-*Curated monthly. Last review: 2026-06-12.*
+*Curated monthly. Last review: 2026-06-15.*
 
+- **2026-06** · **TensorZero shut down** — the VC-backed open-source LLMOps gateway ($7.3M seed) archived its repo on June 12, as first-party clouds ship native gateway/observability features and squeeze independents. ([byteiota](https://byteiota.com/tensorzero-shuts-down-what-oss-llmops-cant-survive/))
+- **2026-03** · **Helicone acquired by Mintlify** (now maintenance mode); the same month **LiteLLM hit a PyPI supply-chain attack** — v1.82.7/1.82.8 were backdoored via a CI-token compromise and quarantined in ~3h, a sharp reminder to pin gateway versions. ([Mintlify](https://www.mintlify.com/blog/mintlify-acquires-helicone), [Trend Micro](https://www.trendmicro.com/en/research/26/c/inside-litellm-supply-chain-compromise.html))
 - **2026-05** · **Palo Alto Networks completed its acquisition of Portkey** (announced Apr 30, closed May 29), making the AI gateway the control plane for its Prisma AIRS security platform — a sign gateways are becoming core security infrastructure. ([Palo Alto Networks](https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-portkey-to-secure-ai-agents))
 - **2026-05** · OpenRouter raised a **$113M Series B** led by CapitalG at a $1.3B valuation — ~8M users, ~100T tokens/month. ([TechCrunch](https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/))
 - **2026-06** · NetFoundry launched **zero-trust MCP and LLM gateways**; Cisco Investments joined its Series A. ([PR Newswire](https://www.prnewswire.com/news-releases/netfoundry-launches-enterprise-class-mcp-and-llm-gateways-bringing-zero-trust-to-ai-deployments-302789053.html))
 - **2026** · Cloudflare AI Gateway shipped **dollar-denominated spend limits** (public beta) on top of dynamic routing and unified billing. ([Cloudflare blog](https://blog.cloudflare.com/ai-gateway-spend-limits/))
 - **2025-11** · Pydantic AI Gateway went open beta and has since merged into **Logfire**; F5 added data-leakage detection to its AI Gateway via the **LeakSignal** acquisition. ([Pydantic Logfire](https://pydantic.dev/logfire), [F5](https://www.f5.com/company/news/press-releases/data-leakage-detection-prevention-secure-ai-workloads))
-- **Trend** · MCP gateways emerged as a distinct category; spend-limit enforcement became table stakes; the **EU AI Act (enforceable Aug 2026)** is driving the compliance bucket; **new-api overtook one-api** as the most active China-ecosystem relay.
+- **Trend** · MCP gateways emerged as a distinct category; spend-limit enforcement became table stakes; the **EU AI Act (enforceable Aug 2026)** is driving the compliance bucket; **new-api overtook one-api** as the most active China-ecosystem relay; and an **independent-gateway shakeout** is underway — Portkey (→Palo Alto) and Helicone (→Mintlify) acquired, TensorZero shut down.
 
 ## 🚀 Recent releases (auto-updated)
 
