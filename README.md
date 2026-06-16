@@ -414,6 +414,7 @@ Every gateway sees your prompts. For sensitive data self-host or require zero-da
 In-depth, data-backed comparisons for the questions people actually search:
 
 - [**LiteLLM vs OpenRouter vs Portkey (2026)**](compare/litellm-vs-openrouter-vs-portkey-2026.md) — which AI gateway should you use?
+- [**LiteLLM alternatives (2026)**](compare/litellm-alternatives-2026.md) — 8 gateways compared by cost, security & self-hosting
 - [**Best self-hosted AI gateway in 2026**](compare/best-self-hosted-ai-gateway-2026.md) — LiteLLM vs Bifrost vs TensorZero vs Kong
 - [**one-api vs new-api vs LiteLLM**](compare/one-api-vs-new-api-vs-litellm.zh-CN.md) — 国内大模型 API 中转怎么选(中文)
 
