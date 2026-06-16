@@ -4,7 +4,7 @@
 [![Evaluation set](https://img.shields.io/badge/📊-评测集-orange)](BENCHMARKS.zh-CN.md)
 [![Data updated daily](https://img.shields.io/badge/数据-每日更新-success?logo=githubactions&logoColor=white)](.github/workflows/daily-update.yml)
 
-> **按你的诉求，约 10 秒选对 AI 网关——而且这个答案可信。** 一棵决策树、一行接入、可复现的成本评测，外加我们排除灰产的独立证据。按真实诉求分类，而非按厂商罗列。
+> **按你的诉求，约 10 秒选对 AI 网关——而且这个答案可信。** 一棵决策树、可复现的成本评测，外加我们排除灰产的独立证据。按真实诉求分类，而非按厂商罗列。
 
 _这清单是被账单逼出来的：**我一天在 AI 写代码上烧了 $788**——一个旗舰模型就吃掉 78%，只因为我把所有请求都默认打给了最贵的那个。于是我把整个网关生态摸了一遍。→ [完整故事](#为什么做这个)_
 
@@ -13,8 +13,7 @@ _这清单是被账单逼出来的：**我一天在 AI 写代码上烧了 $788**
 <p align="center">
 <a href="#我该用哪个网关"><kbd> &nbsp; 🧭 选网关 &nbsp; </kbd></a> &nbsp;
 <a href="https://cuihuan.github.io/awesome-ai-gateway/"><kbd> &nbsp; 🚀 在线交互页 &nbsp; </kbd></a> &nbsp;
-<a href="BENCHMARKS.zh-CN.md"><kbd> &nbsp; 📊 成本与评分卡 &nbsp; </kbd></a> &nbsp;
-<a href="#快速上手一行接入"><kbd> &nbsp; ⚡ 一行接入 &nbsp; </kbd></a>
+<a href="BENCHMARKS.zh-CN.md"><kbd> &nbsp; 📊 成本与评分卡 &nbsp; </kbd></a>
 </p>
 
 <details>
@@ -24,7 +23,7 @@ _这清单是被账单逼出来的：**我一天在 AI 写代码上烧了 $788**
 [![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey.svg)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/cuihuan/awesome-ai-gateway)](https://github.com/cuihuan/awesome-ai-gateway/commits/main)
 
-**快速选** · [我该用哪个网关？](#我该用哪个网关) · [快速上手（一行接入）](#快速上手一行接入) · [快速对比](#快速对比)
+**快速选** · [我该用哪个网关？](#我该用哪个网关) · [快速对比](#快速对比)
 
 **按需浏览** · [💰 性价比优先](#-性价比优先) · [🔓 自托管开源](#-自托管开源) · [🏢 企业合规](#-企业合规) · [☁️ 原厂直连](#️-原厂直连云厂商模型厂商) · [🇨🇳 国内生态](#-国内生态) · [🤖 MCP 与 Agent 网关](#-mcp-与-agent-网关)
 
@@ -88,43 +87,6 @@ _这清单是被账单逼出来的：**我一天在 AI 写代码上烧了 $788**
 </p>
 
 ⭐ **觉得有用就点个 [Star](https://github.com/cuihuan/awesome-ai-gateway)** —— 下一个在选网关的工程师就是这样找到它的。CC0 授权，无需注册、无追踪、不收厂商一分钱。
-
-## 快速上手（一行接入）
-
-网关的全部承诺就是：**改一个 `base_url`，OpenAI 代码照旧**。同一个请求，立刻拥有路由、兜底、缓存与成本核算。
-
-```python
-from openai import OpenAI
-
-# 托管示例 —— OpenRouter（400+ 模型，一把 Key）：
-client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key="sk-or-...",
-)
-
-# 自托管示例 —— 你自己跑的 LiteLLM 代理：
-client = OpenAI(
-    base_url="http://localhost:4000",
-    api_key="sk-litellm-...",
-)
-
-resp = client.chat.completions.create(
-    model="anthropic/claude-fable-5",        # 向网关点名任意厂商的模型
-    messages=[{"role": "user", "content": "你好！"}],
-)
-```
-
-**OpenAI 兼容 `base_url` 速查表**（2026 年 6 月核实——换上即用，代码照旧）：
-
-| 网关 | `base_url` |
-|---|---|
-| OpenRouter | `https://openrouter.ai/api/v1` |
-| Vercel AI Gateway | `https://ai-gateway.vercel.sh/v1` |
-| Cloudflare AI Gateway | `https://gateway.ai.cloudflare.com/v1/{account}/{gateway}/compat` |
-| Portkey | `https://api.portkey.ai/v1` |
-| Helicone AI Gateway | `https://ai-gateway.helicone.ai/ai` |
-| Requesty | `https://router.requesty.ai/v1` |
-| LiteLLM（自托管） | `http://localhost:4000` |
 
 ## 快速对比
 

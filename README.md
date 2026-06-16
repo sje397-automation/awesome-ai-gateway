@@ -4,7 +4,7 @@
 [![Evaluation set](https://img.shields.io/badge/📊-evaluation%20set-orange)](BENCHMARKS.md)
 [![Data updated daily](https://img.shields.io/badge/data-updated%20daily-success?logo=githubactions&logoColor=white)](.github/workflows/daily-update.yml)
 
-> **Pick the right AI gateway for your need in ~10 seconds — then trust the answer.** A decision tree, a drop-in snippet, a reproducible cost benchmark, and independent evidence for what we exclude. Organized by what you actually need, not by vendor.
+> **Pick the right AI gateway for your need in ~10 seconds — then trust the answer.** A decision tree, a reproducible cost benchmark, and independent evidence for what we exclude. Organized by what you actually need, not by vendor.
 
 _Built the hard way: **I burned $788 on AI coding in a single day** — one flagship model ate 78% of it, just because I'd defaulted everything to the priciest option. So I mapped the whole gateway landscape. → [the story](#why-this-exists)_
 
@@ -13,8 +13,7 @@ _Built the hard way: **I burned $788 on AI coding in a single day** — one flag
 <p align="center">
 <a href="#which-gateway-should-i-use"><kbd> &nbsp; 🧭 Pick a gateway &nbsp; </kbd></a> &nbsp;
 <a href="https://cuihuan.github.io/awesome-ai-gateway/"><kbd> &nbsp; 🚀 Live interactive site &nbsp; </kbd></a> &nbsp;
-<a href="BENCHMARKS.md"><kbd> &nbsp; 📊 Cost & scorecard &nbsp; </kbd></a> &nbsp;
-<a href="#quick-start-drop-in"><kbd> &nbsp; ⚡ Drop-in snippet &nbsp; </kbd></a>
+<a href="BENCHMARKS.md"><kbd> &nbsp; 📊 Cost & scorecard &nbsp; </kbd></a>
 </p>
 
 <details>
@@ -24,7 +23,7 @@ _Built the hard way: **I burned $788 on AI coding in a single day** — one flag
 [![License: CC0](https://img.shields.io/badge/license-CC0-lightgrey.svg)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/cuihuan/awesome-ai-gateway)](https://github.com/cuihuan/awesome-ai-gateway/commits/main)
 
-**Pick fast** · [Which gateway should I use?](#which-gateway-should-i-use) · [Quick start (drop-in)](#quick-start-drop-in) · [Quick comparison](#quick-comparison)
+**Pick fast** · [Which gateway should I use?](#which-gateway-should-i-use) · [Quick comparison](#quick-comparison)
 
 **Browse by need** · [💰 Cost-first](#-cost-first-cheapest-multi-model-access) · [🔓 Self-hosted](#-self-hosted-open-source) · [🏢 Enterprise & compliance](#-enterprise--compliance) · [☁️ First-party clouds](#️-first-party-gateways-cloud--model-vendors) · [🇨🇳 China ecosystem](#-china-ecosystem) · [🤖 MCP & agent gateways](#-mcp--agent-gateways)
 
@@ -88,43 +87,6 @@ Do you want to self-host?
 </p>
 
 ⭐ **Found this useful? [Star it](https://github.com/cuihuan/awesome-ai-gateway)** — that's how the next engineer choosing a gateway finds it. CC0, no signup, no tracking, no vendor money.
-
-## Quick start (drop-in)
-
-The whole promise of a gateway: **change `base_url`, keep your OpenAI code.** Same request, now with routing, fallback, caching and cost tracking.
-
-```python
-from openai import OpenAI
-
-# Hosted example — OpenRouter (400+ models, one key):
-client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key="sk-or-...",
-)
-
-# Self-hosted example — a LiteLLM proxy you run:
-client = OpenAI(
-    base_url="http://localhost:4000",
-    api_key="sk-litellm-...",
-)
-
-resp = client.chat.completions.create(
-    model="anthropic/claude-fable-5",        # ask the gateway for any provider's model
-    messages=[{"role": "user", "content": "Hello!"}],
-)
-```
-
-**OpenAI-compatible `base_url` cheat sheet** (verified June 2026 — swap in, keep your code):
-
-| Gateway | `base_url` |
-|---|---|
-| OpenRouter | `https://openrouter.ai/api/v1` |
-| Vercel AI Gateway | `https://ai-gateway.vercel.sh/v1` |
-| Cloudflare AI Gateway | `https://gateway.ai.cloudflare.com/v1/{account}/{gateway}/compat` |
-| Portkey | `https://api.portkey.ai/v1` |
-| Helicone AI Gateway | `https://ai-gateway.helicone.ai/ai` |
-| Requesty | `https://router.requesty.ai/v1` |
-| LiteLLM (self-hosted) | `http://localhost:4000` |
 
 ## Quick comparison
 
