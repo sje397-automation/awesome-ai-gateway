@@ -1,57 +1,98 @@
 {
-  "generated_at": "2026-06-15T03:36:51Z",
+  "generated_at": "2026-06-16T03:37:15Z",
   "stars": {
-    "BerriAI/litellm": 50384,
-    "QuantumNous/new-api": 38774,
-    "songquanpeng/one-api": 34942,
-    "Kong/kong": 43586,
-    "apache/apisix": 16727,
-    "Portkey-AI/gateway": 12072,
-    "tensorzero/tensorzero": 11626,
-    "higress-group/higress": 8650,
-    "tbphp/gpt-load": 6220,
-    "maximhq/bifrost": 5767,
-    "Helicone/helicone": 5813,
-    "envoyproxy/ai-gateway": 1749,
-    "Helicone/ai-gateway": 601,
-    "katanemo/plano": 6592,
-    "theopenco/llmgateway": 1298,
-    "APIParkLab/APIPark": 1756,
+    "BerriAI/litellm": 50511,
+    "QuantumNous/new-api": 38959,
+    "songquanpeng/one-api": 34976,
+    "Kong/kong": 43593,
+    "apache/apisix": 16735,
+    "Portkey-AI/gateway": 12084,
+    "tensorzero/tensorzero": 11644,
+    "higress-group/higress": 8656,
+    "tbphp/gpt-load": 6218,
+    "maximhq/bifrost": 5817,
+    "Helicone/helicone": 5820,
+    "envoyproxy/ai-gateway": 1754,
+    "Helicone/ai-gateway": 602,
+    "katanemo/plano": 6593,
+    "theopenco/llmgateway": 1305,
+    "APIParkLab/APIPark": 1757,
     "pydantic/pydantic-ai-gateway": 189,
-    "algorithmicsuperintelligence/optillm": 4145,
-    "andrewyng/aisuite": 14437,
-    "bricks-cloud/BricksLLM": 1209,
+    "algorithmicsuperintelligence/optillm": 4147,
+    "andrewyng/aisuite": 14579,
+    "lightseekorg/smg": 333,
+    "RelayPlane/proxy": 180,
+    "nehadangwal/sentrynode-gateway": 0,
+    "bricks-cloud/BricksLLM": 1211,
     "EinStack/glide": 160,
     "kgateway-dev/kgateway": 5561,
     "TheLunarCompany/lunar": 455,
-    "MartialBE/one-hub": 2842,
+    "krakend/krakend-ce": 2637,
+    "MartialBE/one-hub": 2843,
     "fruitbars/simple-one-api": 2313,
     "Veloera/Veloera": 1630,
     "yym68686/uni-api": 1228,
-    "lm-sys/RouteLLM": 5020,
+    "VoAPI/VoAPI": 1051,
+    "deanxv/done-hub": 771,
+    "agentgateway/agentgateway": 3302,
+    "IBM/mcp-context-forge": 3891,
+    "metatool-ai/metamcp": 2419,
+    "mcpjungle/MCPJungle": 1097,
+    "obot-platform/obot": 830,
+    "fdmtl/director": 479,
+    "lasso-security/mcp-gateway": 376,
+    "pomerium/pomerium": 4854,
+    "lm-sys/RouteLLM": 5027,
+    "musistudio/claude-code-router": 35010,
+    "vllm-project/semantic-router": 4384,
+    "NVIDIA-AI-Blueprints/llm-router": 294,
+    "ulab-uiuc/LLMRouter": 1985,
     "vllora/vllora": 804,
-    "braintrustdata/braintrust-proxy": 398,
-    "mlflow/mlflow": 26527,
-    "agentgateway/agentgateway": 3280,
+    "braintrustdata/braintrust-proxy": 399,
+    "mlflow/mlflow": 26542,
     "kubernetes-sigs/gateway-api-inference-extension": 693,
-    "vllm-project/aibrix": 4876,
-    "llm-d/llm-d": 3356,
-    "inference-gateway/inference-gateway": 125
+    "vllm-project/aibrix": 4877,
+    "llm-d/llm-d": 3367,
+    "inference-gateway/inference-gateway": 125,
+    "kserve/kserve": 5577,
+    "gpustack/gpustack": 5164,
+    "vllm-project/production-stack": 2408
   },
   "releases": [
     {
-      "repo": "yym68686/uni-api",
-      "tag": "v1.7.130",
-      "name": "Release 1.7.130",
-      "published_at": "2026-06-14T21:51:57Z",
-      "url": "https://github.com/yym68686/uni-api/releases/tag/v1.7.130"
+      "repo": "BerriAI/litellm",
+      "tag": "v1.89.1",
+      "name": "v1.89.1",
+      "published_at": "2026-06-16T03:31:56Z",
+      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.89.1"
     },
     {
-      "repo": "BerriAI/litellm",
-      "tag": "v1.89.0",
-      "name": "v1.89.0",
-      "published_at": "2026-06-14T00:05:01Z",
-      "url": "https://github.com/BerriAI/litellm/releases/tag/v1.89.0"
+      "repo": "katanemo/plano",
+      "tag": "0.4.25",
+      "name": "0.4.25",
+      "published_at": "2026-06-15T21:25:54Z",
+      "url": "https://github.com/katanemo/plano/releases/tag/0.4.25"
+    },
+    {
+      "repo": "yym68686/uni-api",
+      "tag": "v1.7.132",
+      "name": "Release 1.7.132",
+      "published_at": "2026-06-15T15:16:11Z",
+      "url": "https://github.com/yym68686/uni-api/releases/tag/v1.7.132"
+    },
+    {
+      "repo": "maximhq/bifrost",
+      "tag": "ent-v1.4.9-stream-pause-base",
+      "name": "Enterprise v1.4.9 stream pause base",
+      "published_at": "2026-06-15T04:46:50Z",
+      "url": "https://github.com/maximhq/bifrost/releases/tag/ent-v1.4.9-stream-pause-base"
+    },
+    {
+      "repo": "kserve/kserve",
+      "tag": "v0.19.0",
+      "name": "v0.19.0",
+      "published_at": "2026-06-14T03:09:11Z",
+      "url": "https://github.com/kserve/kserve/releases/tag/v0.19.0"
     },
     {
       "repo": "QuantumNous/new-api",
@@ -68,11 +109,11 @@
       "url": "https://github.com/kgateway-dev/kgateway/releases/tag/v2.3.3"
     },
     {
-      "repo": "maximhq/bifrost",
-      "tag": "transports/v1.5.13",
-      "name": "Bifrost HTTP v1.5.13",
-      "published_at": "2026-06-12T18:05:17Z",
-      "url": "https://github.com/maximhq/bifrost/releases/tag/transports/v1.5.13"
+      "repo": "lightseekorg/smg",
+      "tag": "v1.5.0",
+      "name": "v1.5.0",
+      "published_at": "2026-06-12T02:44:08Z",
+      "url": "https://github.com/lightseekorg/smg/releases/tag/v1.5.0"
     },
     {
       "repo": "andrewyng/aisuite",
@@ -82,11 +123,11 @@
       "url": "https://github.com/andrewyng/aisuite/releases/tag/app-v0.1.1"
     },
     {
-      "repo": "katanemo/plano",
-      "tag": "0.4.24",
-      "name": "0.4.24",
-      "published_at": "2026-06-09T23:22:34Z",
-      "url": "https://github.com/katanemo/plano/releases/tag/0.4.24"
+      "repo": "IBM/mcp-context-forge",
+      "tag": "v1.0.3",
+      "name": "v1.0.3 - Auth & JWT Cleanup, Admin UI Fixes, FedRAMP/FIPS Hardening, and Bug Fixes",
+      "published_at": "2026-06-10T10:45:40Z",
+      "url": "https://github.com/IBM/mcp-context-forge/releases/tag/v1.0.3"
     },
     {
       "repo": "envoyproxy/ai-gateway",
@@ -94,6 +135,20 @@
       "name": "v0.7.0",
       "published_at": "2026-06-06T20:59:58Z",
       "url": "https://github.com/envoyproxy/ai-gateway/releases/tag/v0.7.0"
+    },
+    {
+      "repo": "vllm-project/semantic-router",
+      "tag": "v0.3.0",
+      "name": "Release v0.3.0",
+      "published_at": "2026-06-05T12:08:52Z",
+      "url": "https://github.com/vllm-project/semantic-router/releases/tag/v0.3.0"
+    },
+    {
+      "repo": "pomerium/pomerium",
+      "tag": "v0.32.8",
+      "name": "v0.32.8",
+      "published_at": "2026-06-04T22:00:41Z",
+      "url": "https://github.com/pomerium/pomerium/releases/tag/v0.32.8"
     },
     {
       "repo": "tensorzero/tensorzero",
@@ -110,11 +165,25 @@
       "url": "https://github.com/Kong/kong/releases/tag/3.9.2"
     },
     {
+      "repo": "krakend/krakend-ce",
+      "tag": "v2.13.7",
+      "name": "v2.13.7",
+      "published_at": "2026-06-03T13:58:16Z",
+      "url": "https://github.com/krakend/krakend-ce/releases/tag/v2.13.7"
+    },
+    {
       "repo": "mlflow/mlflow",
       "tag": "v3.13.0",
       "name": "v3.13.0",
       "published_at": "2026-06-01T23:24:24Z",
       "url": "https://github.com/mlflow/mlflow/releases/tag/v3.13.0"
+    },
+    {
+      "repo": "deanxv/done-hub",
+      "tag": "v1.21.18",
+      "name": "v1.21.18",
+      "published_at": "2026-05-30T13:36:59Z",
+      "url": "https://github.com/deanxv/done-hub/releases/tag/v1.21.18"
     },
     {
       "repo": "tbphp/gpt-load",
@@ -124,11 +193,32 @@
       "url": "https://github.com/tbphp/gpt-load/releases/tag/v1.4.8"
     },
     {
+      "repo": "obot-platform/obot",
+      "tag": "v0.22.1",
+      "name": "v0.22.1",
+      "published_at": "2026-05-28T15:35:07Z",
+      "url": "https://github.com/obot-platform/obot/releases/tag/v0.22.1"
+    },
+    {
       "repo": "higress-group/higress",
       "tag": "v2.2.2",
       "name": "v2.2.2",
       "published_at": "2026-05-26T01:41:03Z",
       "url": "https://github.com/higress-group/higress/releases/tag/v2.2.2"
+    },
+    {
+      "repo": "mcpjungle/MCPJungle",
+      "tag": "0.4.5",
+      "name": "0.4.5",
+      "published_at": "2026-05-20T09:05:27Z",
+      "url": "https://github.com/mcpjungle/MCPJungle/releases/tag/0.4.5"
+    },
+    {
+      "repo": "RelayPlane/proxy",
+      "tag": "v1.9.38",
+      "name": "v1.9.38",
+      "published_at": "2026-05-19T06:31:33Z",
+      "url": "https://github.com/RelayPlane/proxy/releases/tag/v1.9.38"
     },
     {
       "repo": "agentgateway/agentgateway",
@@ -145,11 +235,25 @@
       "url": "https://github.com/llm-d/llm-d/releases/tag/v0.7.0"
     },
     {
+      "repo": "vllm-project/production-stack",
+      "tag": "vllm-stack-0.1.11",
+      "name": "vllm-stack-0.1.11",
+      "published_at": "2026-05-07T18:23:19Z",
+      "url": "https://github.com/vllm-project/production-stack/releases/tag/vllm-stack-0.1.11"
+    },
+    {
       "repo": "algorithmicsuperintelligence/optillm",
       "tag": "v0.3.15",
       "name": "v0.3.15",
       "published_at": "2026-05-07T08:48:50Z",
       "url": "https://github.com/algorithmicsuperintelligence/optillm/releases/tag/v0.3.15"
+    },
+    {
+      "repo": "gpustack/gpustack",
+      "tag": "v2.1.2",
+      "name": "v2.1.2",
+      "published_at": "2026-04-21T09:23:09Z",
+      "url": "https://github.com/gpustack/gpustack/releases/tag/v2.1.2"
     },
     {
       "repo": "kubernetes-sigs/gateway-api-inference-extension",
@@ -180,6 +284,20 @@
       "url": "https://github.com/vllora/vllora/releases/tag/v0.1.23"
     },
     {
+      "repo": "lasso-security/mcp-gateway",
+      "tag": "v1.2.0",
+      "name": "Lasso Guardrails v3 API Support",
+      "published_at": "2026-01-21T20:40:41Z",
+      "url": "https://github.com/lasso-security/mcp-gateway/releases/tag/v1.2.0"
+    },
+    {
+      "repo": "VoAPI/VoAPI",
+      "tag": "v1.2.0",
+      "name": "v1.2.0",
+      "published_at": "2026-01-20T01:59:44Z",
+      "url": "https://github.com/VoAPI/VoAPI/releases/tag/v1.2.0"
+    },
+    {
       "repo": "Portkey-AI/gateway",
       "tag": "v1.15.2",
       "name": "v1.15.2",
@@ -194,6 +312,13 @@
       "url": "https://github.com/pydantic/pydantic-ai-gateway/releases/tag/v0.0.3"
     },
     {
+      "repo": "metatool-ai/metamcp",
+      "tag": "v2.4.22",
+      "name": "2.4.22 Security updates, custom headers, tool sync caching",
+      "published_at": "2025-12-19T07:27:06Z",
+      "url": "https://github.com/metatool-ai/metamcp/releases/tag/v2.4.22"
+    },
+    {
       "repo": "theopenco/llmgateway",
       "tag": "v1.3.0",
       "name": "v1.3.0",
@@ -206,6 +331,13 @@
       "name": "v0.14.27",
       "published_at": "2025-12-06T07:26:25Z",
       "url": "https://github.com/MartialBE/one-hub/releases/tag/v0.14.27"
+    },
+    {
+      "repo": "fdmtl/director",
+      "tag": "@director.run/cli@1.1.1",
+      "name": "@director.run/cli@1.1.1",
+      "published_at": "2025-10-31T11:42:02Z",
+      "url": "https://github.com/fdmtl/director/releases/tag/%40director.run/cli%401.1.1"
     },
     {
       "repo": "APIParkLab/APIPark",
@@ -227,6 +359,13 @@
       "name": "v2025.08.21-1",
       "published_at": "2025-08-21T18:47:38Z",
       "url": "https://github.com/Helicone/helicone/releases/tag/v2025.08.21-1"
+    },
+    {
+      "repo": "NVIDIA-AI-Blueprints/llm-router",
+      "tag": "v1.0",
+      "name": "v1.0",
+      "published_at": "2025-02-28T21:25:18Z",
+      "url": "https://github.com/NVIDIA-AI-Blueprints/llm-router/releases/tag/v1.0"
     },
     {
       "repo": "songquanpeng/one-api",
