@@ -135,6 +135,8 @@ Stars auto-refresh daily. ✅ built-in · ➕ via plugin/paid tier · ❌ not av
 - [AIMLAPI](https://aimlapi.com) — One OpenAI/Anthropic-compatible endpoint fronting 400+ models (chat, image, video, audio, embeddings); prepaid, OpenRouter-style aggregator.
 - [Novita AI](https://novita.ai) — Unified API to 200+ open-source models (DeepSeek/Qwen/Llama…) with load balancing, autoscaling and failover; also a GPU cloud.
 - [FlintAPI](https://flintapi.ai) — Hosted OpenAI-compatible gateway for Chinese open models; claims to run Qwen2.5-72B on custom "PPU" silicon at ~30% below OpenRouter. New and unverified — confirm model fidelity (e.g. with [canary_check.py](scripts/canary_check.py)) before relying on it in production.
+- [FlowBar](https://flowbarai.com) — Hosted OpenAI-compatible relay reselling 50+ models (GPT, Claude, Gemini, DeepSeek, Qwen, GLM, Kimi) below OpenRouter, with USD/CNY/crypto payment. New and unverified — confirm model fidelity (e.g. with [canary_check.py](scripts/canary_check.py)) before relying on it in production.
+- [OpenPaths](https://openpaths.io) — Hosted OpenAI-compatible router across 15+ providers spanning chat, image, video, music, speech, embeddings, transcription and search; source/dev on [Codex Infinity](https://codex-infinity.com/lee101/openpaths). Newer SaaS.
 - [Glama Gateway](https://glama.ai/ai/gateway) — OpenAI-compatible gateway to 100+ models with consolidated billing, caching and logging (OSS core [glama-ai/lightport](https://github.com/glama-ai/lightport)).
 
 > 💡 Squeeze more from any gateway: enable **semantic caching** (Kong, Bifrost, Zuplo), set **spend limits** (Cloudflare, Zuplo, Pydantic/Logfire), and route easy prompts to cheap models (see [Smart routing](#-smart-routing--model-selection)).
