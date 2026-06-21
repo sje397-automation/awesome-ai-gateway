@@ -110,7 +110,7 @@ Stars auto-refresh daily. ✅ built-in · ➕ via plugin/paid tier · ❌ not av
 | [OpenRouter](https://openrouter.ai) | SaaS marketplace | — | Commercial | ✅ 400+ | ✅ | ✅ | ➕ | ✅ |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | SaaS (0% markup) | — | Commercial | ✅ 100s | ✅ | ❌ | ❌ | ✅ |
 | [Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/) | SaaS control plane | — | Commercial (free tier) | ✅ | ✅ dynamic | ✅ | ✅ | ✅ budgets |
-| [lxg2it ModelRouter](https://github.com/lxg2it/modelrouter-core) | OSS router + SaaS | <!--s:lxg2it/modelrouter-core-->⭐ 0<!--/s--> | MIT | ✅ 7+ | ✅ tiered fallback | ➕ | ❌ | ✅ |
+| [lxg2it ModelRouter](https://lxg2it.com) | OSS router + SaaS | <!--s:lxg2it/modelrouter-core-->⭐ 0<!--/s--> | MIT | ✅ 7+ | ✅ tiered fallback | ➕ | ❌ | ✅ |
 
 ¹ LiteLLM core is MIT; the repo contains a separately licensed enterprise directory.
 
