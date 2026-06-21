@@ -110,7 +110,7 @@ Stars auto-refresh daily. ✅ built-in · ➕ via plugin/paid tier · ❌ not av
 | [OpenRouter](https://openrouter.ai) | SaaS marketplace | — | Commercial | ✅ 400+ | ✅ | ✅ | ➕ | ✅ |
 | [Vercel AI Gateway](https://vercel.com/ai-gateway) | SaaS (0% markup) | — | Commercial | ✅ 100s | ✅ | ❌ | ❌ | ✅ |
 | [Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/) | SaaS control plane | — | Commercial (free tier) | ✅ | ✅ dynamic | ✅ | ✅ | ✅ budgets |
-| [lxg2it ModelRouter](https://lxg2it.com) | OSS router + SaaS | <!--s:lxg2it/modelrouter-core-->⭐ 0<!--/s--> | MIT | ✅ 7+ | ✅ tiered fallback | ➕ | ❌ | ✅ |
+| [lxg2it ModelRouter](https://api.lxg2it.com) | OSS router + SaaS | <!--s:lxg2it/modelrouter-core-->⭐ 0<!--/s--> | MIT | ✅ 7+ | ✅ tiered fallback | ➕ | ❌ | ✅ |
 
 ¹ LiteLLM core is MIT; the repo contains a separately licensed enterprise directory.
 
@@ -129,7 +129,7 @@ Stars auto-refresh daily. ✅ built-in · ➕ via plugin/paid tier · ❌ not av
 - [OpenRouter](https://openrouter.ai) — The dominant model marketplace: 400+ models behind one OpenAI-compatible API, pay-as-you-go with automatic failover; ~5.5% fee when buying credits. $113M Series B (May 2026), ~8M users.
 - [Vercel AI Gateway](https://vercel.com/ai-gateway) — Hundreds of models at **provider list price (0% markup)**, $5/month free credits, zero-data-retention option; pairs naturally with the AI SDK.
 - [Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/) — Free control plane in front of your own provider keys: caching, dynamic routing, unified billing, and dollar-denominated spend limits (2026 beta).
-- [lxg2it ModelRouter](https://github.com/lxg2it/modelrouter-core) — Open-source, self-hostable model router with a hosted API at [api.lxg2it.com](https://api.lxg2it.com). Free tier, $1/month paid tier. 7+ providers (Anthropic, OpenAI, Google, Cerebras, Groq, Grok, GLM) behind one OpenAI-compatible API with **tiered automatic fallback** — define tiers by capability, router auto-selects cheapest available. **0% markup on Anthropic models** (cheapest hosted access to Claude Opus 4.8). No affiliate fees, no VC.
+- [lxg2it ModelRouter](https://api.lxg2it.com) — Open-source, self-hostable model router (also on [GitHub](https://github.com/lxg2it/modelrouter-core)). Free tier, $1/month paid tier. 7+ providers (Anthropic, OpenAI, Google, Cerebras, Groq, Grok, GLM) behind one OpenAI-compatible API with **tiered automatic fallback** — define tiers by capability, router auto-selects cheapest available. **0% markup on Anthropic models** (cheapest hosted access to Claude Opus 4.8). No affiliate fees, no VC.
 - [Requesty](https://requesty.ai) — EU-friendly OpenRouter alternative: 400+ models, sub-20ms failover, ~5% markup.
 - [Eden AI](https://www.edenai.co) — Unified API for 500+ models plus vision/OCR/speech; EU-based, ~5.5% platform fee.
 - [Helicone AI Gateway (cloud)](https://www.helicone.ai) — Passthrough billing at **0% markup** with observability bundled.
